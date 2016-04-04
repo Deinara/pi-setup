@@ -24,8 +24,8 @@ pi@raspberrypi:~ $
 ```
 
 #### MOTD Sources:
-* [http://patorjk.com for ASCII 'Welcome To'](http://patorjk.com/software/taag/)
-* [Raspberry Pi Forum user 'yanewby' for the ASCII raspberry and ideas for statistics](https://www.raspberrypi.org/forums/viewtopic.php?t=23440)
+* [http://patorjk.com](http://patorjk.com/software/taag/) for ASCII 'Welcome To'
+* [Raspberry Pi Forum user 'yanewby'](https://www.raspberrypi.org/forums/viewtopic.php?t=23440) for the ASCII raspberry and ideas for statistics
 * Various pages and forums with example commands to construct stats
 
 ## Installation
