@@ -11,7 +11,7 @@ Several scripts to setup your raspberry pi
 
     .~~.   .~~.
    '. \ ' ' / .'        Date.........: 12:53:31 04-04-2016
-    .~ .~~~..~.         Last login...: Mon Apr 4 12:51 from 87.215.28.222
+    .~ .~~~..~.         Last login...: Mon Apr 4 12:51 from 00.000.00.000
    : .~.'~'.~. :        SSH Sessions.: 2
   ~ (   ) (   ) ~       Uptime.......: 0 days, 13h 20m 00s
  ( : '~'.~.'~' : )      Memory.......: Total: 925MB, Used: 308MB, Free: 617MB
