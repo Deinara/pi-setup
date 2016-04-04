@@ -1,0 +1,35 @@
+clear
+# sources:
+# http://patorjk.com/software/taag/#p=display&f=Slant&t=Welcome%20to
+# https://www.raspberrypi.org/forums/viewtopic.php?t=23440
+
+. "$HOME/.profile"
+
+let upSeconds="$(/usr/bin/cut -d. -f1 /proc/uptime)"
+let secs=$((${upSeconds}%60))
+let mins=$((${upSeconds}/60%60))
+let hours=$((${upSeconds}/3600%24))
+let days=$((${upSeconds}/86400))
+UPTIME=`printf "%d days, %02dh %02dm %02ds" "$days" "$hours" "$mins" "$secs"`
+
+let origtemp="$(cat /sys/class/thermal/thermal_zone0/temp)"
+let tempcalc=$((${origtemp}/1000))
+TEMP=`printf "%d°C" "$tempcalc"`
+
+echo '  _       __     __                             __
+ | |     / /__  / /________  ____ ___  ___     / /_____   _
+ | | /| / / _ \/ / ___/ __ \/ __ `__ \/ _ \   / __/ __ \ (_)
+ | |/ |/ /  __/ / /__/ /_/ / / / / / /  __/  / /_/ /_/ / _
+ |__/|__/\___/_/\___/\____/_/ /_/ /_/\___/   \__/\____/ (_)
+                                                         '
+echo " $(tput setaf 2)   .~~.   .~~."
+echo "   '. \ ' ' / .'$(tput setaf 7)         Date.........: `date +"%T %d-%m-%Y"`"
+echo " $(tput setaf 1)   .~ .~~~..~.$(tput setaf 7)          Last login...: `last pi | awk 'NR==2 { print $4,$5,$6,$7 }'` from `last pi | awk 'NR==2 { print $3 }'`"
+echo " $(tput setaf 1)  : .~.'~'.~. :$(tput setaf 7)         SSH Sessions.: `who | grep pts | wc -l`"
+echo " $(tput setaf 1) ~ (   ) (   ) ~$(tput setaf 7)        Uptime.......: ${UPTIME}"
+echo " $(tput setaf 1)( : '~'.~.'~' : )$(tput setaf 7)       Memory.......: `free -m | awk 'NR==2 { printf "Total: %sMB, Used: %sMB, Free: %sMB",$2,$3,$4; }'`"
+echo " $(tput setaf 1) ~ .~ (   ) ~. ~$(tput setaf 7)        Processes....: `ps ax | wc -l | tr -d " "`"
+echo " $(tput setaf 1)  (  : '~' :  )$(tput setaf 7)         Temperature..: ${TEMP}"
+echo " $(tput setaf 1)   '~ .~~~. ~'"
+echo "        '~'"
+echo "$(tput sgr0)"
