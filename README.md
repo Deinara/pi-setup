@@ -1,7 +1,15 @@
 # Pi-Setup
-Several scripts to setup your raspberry pi
+A small setup program I wrote because I kept reinstalling my Raspberry Pi.
 
-## MOTD preview
+Pull requests, additions and ideas are welcomed!
+
+## Installation
+* Download the repository: `git clone http://github.com/Deinara/pi-setup`
+* enter the directory: `cd pi-setup`
+* make the script executable: `chmod +x setup.py`
+* run the script: `sudo ./setup.py`
+
+## MOTD
 ```
   _       __     __                             __
  | |     / /__  / /________  ____ ___  ___     / /_____   _
@@ -27,6 +35,3 @@ pi@raspberrypi:~ $
 * [http://patorjk.com](http://patorjk.com/software/taag/) for ASCII 'Welcome To'
 * [Raspberry Pi Forum user 'yanewby'](https://www.raspberrypi.org/forums/viewtopic.php?t=23440) for the ASCII raspberry and ideas for statistics
 * Various pages and forums with example commands to construct stats
-
-## Installation
-* install instructions to come
