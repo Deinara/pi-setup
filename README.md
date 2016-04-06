@@ -3,6 +3,11 @@ A small setup program I wrote because I kept reinstalling my Raspberry Pi.
 
 Pull requests, additions and ideas are welcomed!
 
+So far, it will:
+* Update/upgrade the Pi
+* Install a webserver with Apache, PHP, MySQL and FTP
+* Install a custom MOTD (Message of the Day, the text that shows whenever you log in via SSH) 
+
 ## Installation
 * Download the repository: `git clone http://github.com/Deinara/pi-setup`
 * enter the directory: `cd pi-setup`
