@@ -1,0 +1,46 @@
+{
+  "actions": [
+    [
+      "Update",
+      "This updates the apt-get definitions",
+      "ON",
+      [
+        "apt-get update"
+      ]
+    ],
+    [
+      "Upgrade",
+      "This updates the system to the latest version",
+      "ON",
+      [
+        "apt-get upgrade -y"
+      ]
+    ],
+    [
+      "Install webserver",
+      "This installs a webserver consisting of apache2, PHP5 and mysql",
+      "OFF",
+      [
+        "apt-get install apache2 -y",
+        "apt-get install php5 libapache2-mod-php5 -y",
+        "apt-get install mysql-server php5-mysql -y"
+      ]
+    ],
+    [
+      "Install FTP server",
+      "This installs VSFTPD",
+      "ON",
+      [
+        "apt-get install vsftpd -y"
+      ]
+    ],
+    [
+      "Install new MOTD",
+      "This installs a new MOTD showing a raspberry pi logo and some statistics. This will overwrite your .bash_profile !",
+      "OFF",
+      [
+        "cp motd $HOME/.bash_profile"
+      ]
+    ]
+  ]
+}
