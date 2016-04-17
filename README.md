@@ -9,6 +9,7 @@ So far, it will:
 * Install a custom MOTD (Message of the Day, the text that shows whenever you log in via SSH) 
 
 ## Installation
+* Make sure the filesystem is expanded to it's maximum size (using raspi-config)
 * Download the repository: `git clone http://github.com/Deinara/pi-setup`
 * enter the directory: `cd pi-setup`
 * make the script executable: `chmod +x setup.py`
