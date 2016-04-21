@@ -35,6 +35,14 @@
       ]
     ],
     [
+      "Install Screen",
+      "This installs Screen, a service to acces terminal sessions from multiple locations, or run it in the background",
+      "ON",
+      [
+        "apt-get install screen -y"
+      ]
+    ],
+    [
       "Install new MOTD",
       "This installs a new MOTD showing a raspberry pi logo and some statistics. This will overwrite your .bash_profile !",
       "OFF",
