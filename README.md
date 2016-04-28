@@ -7,7 +7,7 @@ So far, it will:
 * Update/upgrade the Pi
 * Install a webserver with Apache, PHP, MySQL and FTP
 * Install fail2ban
-* install screen
+* Install screen
 * Install a custom MOTD (Message of the Day, the text that shows whenever you log in via SSH) 
 
 It comes with an easily configurable json file, to add your own features (and don't hesitate to add them on github, too!)
@@ -47,7 +47,7 @@ pi@raspberrypi:~ $
 * Various pages and forums with example commands to construct stats
 
 ##json setup
-Editing the json file is really simple, all you need to do is add another action like so:
+Editing the json file is really simple, all you need to do is add another action with the following format:
 ```json
 [
   "Name",
