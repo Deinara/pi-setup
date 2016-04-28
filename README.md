@@ -6,7 +6,11 @@ Pull requests, additions and ideas are welcomed!
 So far, it will:
 * Update/upgrade the Pi
 * Install a webserver with Apache, PHP, MySQL and FTP
+* Install fail2ban
+* install screen
 * Install a custom MOTD (Message of the Day, the text that shows whenever you log in via SSH) 
+
+It comes with an easily configurable json file, to add your own features (and don't hesitate to add them on github, too!)
 
 ## Installation
 * Make sure the filesystem is expanded to it's maximum size (using raspi-config)
@@ -41,3 +45,17 @@ pi@raspberrypi:~ $
 * [http://patorjk.com](http://patorjk.com/software/taag/) for ASCII 'Welcome To'
 * [Raspberry Pi Forum user 'yanewby' and 'b3n'](https://www.raspberrypi.org/forums/viewtopic.php?t=23440) for the ASCII raspberry and ideas for statistics
 * Various pages and forums with example commands to construct stats
+
+##json setup
+Editing the json file is really simple, all you need to do is add another action like so:
+```json
+[
+  "Name",
+  "Description",
+  "<enabled by default or not, values are ON or OFF>",
+  [
+    "<bash command 1>",
+    "<bash command 2>"
+  ]
+],
+```
