@@ -2,7 +2,7 @@
   "actions": [
     [
       "Update",
-      "This updates the apt-get definitions",
+      "Updates the apt-get definitions",
       "ON",
       [
         "apt-get update"
@@ -10,7 +10,7 @@
     ],
     [
       "Upgrade",
-      "This updates the system to the latest version",
+      "Update the system to the latest version",
       "ON",
       [
         "apt-get upgrade -y"
@@ -18,17 +18,25 @@
     ],
     [
       "Install webserver",
-      "This installs a webserver consisting of apache2, PHP5 and mysql",
+      "Install a webserver consisting of apache2, PHP5 and mysql",
       "OFF",
       [
         "apt-get install apache2 -y",
-        "apt-get install php5 libapache2-mod-php5 -y",
+        "apt-get install php5 libapache2-mod-php5 php5-apc -y",
         "apt-get install mysql-server php5-mysql -y"
       ]
     ],
     [
+      "Install fail2ban",
+      "Detects malicious login attempts, and bans offending IP-addresses",
+      "ON",
+      [
+        "apt-get install fail2ban -y"
+      ]
+    ],
+    [
       "Install FTP server",
-      "This installs VSFTPD",
+      "Install VSFTPD",
       "ON",
       [
         "apt-get install vsftpd -y"
@@ -36,7 +44,7 @@
     ],
     [
       "Install Screen",
-      "This installs Screen, a service to acces terminal sessions from multiple locations, or run it in the background",
+      "Install Screen, a service to acces terminal sessions from multiple locations, or run it in the background",
       "ON",
       [
         "apt-get install screen -y"
