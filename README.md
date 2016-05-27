@@ -46,7 +46,7 @@ pi@raspberrypi:~ $
 * [Raspberry Pi Forum user 'yanewby' and 'b3n'](https://www.raspberrypi.org/forums/viewtopic.php?t=23440) for the ASCII raspberry and ideas for statistics
 * Various pages and forums with example commands to construct stats
 
-##json setup
+## json setup
 Editing the json file is really simple, all you need to do is add another action with the following format:
 ```json
 [
@@ -59,3 +59,7 @@ Editing the json file is really simple, all you need to do is add another action
   ]
 ],
 ```
+
+##  Notes
+* You still have to remove the IP-binding for MySQL if you want to use it anywhere else but localhost
+* You still have to allow writing in VSFTPD if you want to write files via FTP
