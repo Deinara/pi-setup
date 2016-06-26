@@ -22,7 +22,7 @@
       "OFF",
       [
         "apt-get install apache2 -y",
-        "apt-get install php5 libapache2-mod-php5 php-apc -y",
+        "apt-get install php5 libapache2-mod-php5 php-apc php5-imagick -y",
         "apt-get install mysql-server php5-mysql -y"
       ]
     ],
@@ -48,6 +48,14 @@
       "ON",
       [
         "apt-get install screen -y"
+      ]
+    ],
+    [
+      "Install Home Assistant",
+      "Install Home Assistant, an open-source home automation platform running on Python 3",
+      "OFF",
+      [
+        "pip3 install homeassistant"
       ]
     ],
     [
