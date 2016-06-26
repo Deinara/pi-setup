@@ -51,6 +51,14 @@
       ]
     ],
     [
+      "Install XRDP",
+      "Install XRDP, An open source remote desktop protocol server",
+      "ON",
+      [
+        "apt-get install xrdp -y"
+      ]
+    ],
+    [
       "Install Home Assistant",
       "Install Home Assistant, an open-source home automation platform running on Python 3",
       "OFF",
