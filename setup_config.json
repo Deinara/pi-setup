@@ -53,7 +53,7 @@
     [
       "Install XRDP",
       "Install XRDP, An open source remote desktop protocol server",
-      "ON",
+      "OFF",
       [
         "apt-get install xrdp -y"
       ]
