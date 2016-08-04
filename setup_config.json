@@ -71,8 +71,8 @@
       "This installs a new MOTD showing a raspberry pi logo and some statistics. This will overwrite your .bash_profile !",
       "OFF",
       [
-        "cp motd /home/pi/.bash_profile"
-	"sed -i '/PrintLastLog/c\\PrintLastLog = no' /etc/ssh/sshd_config",
+        "cp motd /home/pi/.bash_profile",
+	"sed -i '/PrintLastLog/c\\PrintLastLog = no' /etc/ssh/sshd_config"
       ]
     ]
   ]
