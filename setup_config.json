@@ -22,8 +22,8 @@
       "OFF",
       [
         "apt-get install apache2 -y",
-        "apt-get install php5 libapache2-mod-php5 php-apc php5-imagick -y",
-        "apt-get install mysql-server php5-mysql -y"
+        "apt-get install php5 libapache2-mod-php7 php-apc php7-imagick -y",
+        "apt-get install mysql-server php7-mysql -y"
       ]
     ],
     [
@@ -56,6 +56,14 @@
       "OFF",
       [
         "apt-get install xrdp -y"
+      ]
+    ],
+    [
+      "Install node.js",
+      "Install node.js, A javascript runtime based on the v8 engine",
+      "OFF",
+      [
+        "apt-get install nodejs npm -y"
       ]
     ],
     [
