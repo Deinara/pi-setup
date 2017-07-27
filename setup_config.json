@@ -22,8 +22,8 @@
       "OFF",
       [
         "apt-get install apache2 -y",
-        "apt-get install php5 libapache2-mod-php7 php-apc php7-imagick -y",
-        "apt-get install mysql-server php7-mysql -y"
+        "apt-get install php7.0 libapache2-mod-php7.0 php-imagick -y",
+        "apt-get install mysql-server php7.0-mysql -y"
       ]
     ],
     [
